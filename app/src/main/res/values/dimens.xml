@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">17dp</dimen>
+    <dimen name="rating">15dip</dimen>
+    <dimen name="genre">13dip</dimen>
+    <dimen name="year">12dip</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--Sizes for userlogin and reg edittext-->
+    <dimen name="userNameEditTextUsernamePass">300dp</dimen>
+    <dimen name="editTextMargin">7dp</dimen>
+    <dimen name="cardViewMargin">10dp</dimen>
+    <dimen name="cardViewHeight">42.5dp</dimen>
+    <dimen name="cardViewHeightSW">44.5dp</dimen>
+    <dimen name="cardViewRadius">25dp</dimen>
+</resources>

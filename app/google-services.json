@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "408935473037",
+    "firebase_url": "https://eyedecided-c931f.firebaseio.com",
+    "project_id": "eyedecided-c931f",
+    "storage_bucket": "eyedecided-c931f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408935473037:android:4f536081b06f66e3",
+        "android_client_info": {
+          "package_name": "com.example.phosphor.idecided"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408935473037-k4d4uurn0rigvk9g0or1ap070agj8k77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phosphor.idecided",
+            "certificate_hash": "cae60b43c7c3524b2d3412b92c114ae07313c158"
+          }
+        },
+        {
+          "client_id": "408935473037-b1v5ut4m0g2erj4kaearf4o4aq4t3i78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClATI6iNjCbcgB9zI0YT1AdsXsRvDqHSk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408935473037-b1v5ut4m0g2erj4kaearf4o4aq4t3i78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

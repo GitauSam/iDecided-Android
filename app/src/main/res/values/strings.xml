@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">i Decided</string>
+    <!--strings related to registration and login-->
+    <string name="username">Username</string>
+    <string name="enterusername">Username</string>
+    <string name="password">Password</string>
+    <string name="enterpass">Password</string>
+    <string name="email">Email</string>
+    <string name="enteremail">Email</string>
+    <string name="register">Register</string>
+    <string name="signin">Login</string>
+    <string name="alreadyregistered">Sign in here</string>
+    <string name="notregistered">Register here</string>
+    <!--strings related to leaders profile-->
+    <string name="leadername">Leader\'s Name</string>
+    <string name="post">Post</string>
+    <string name="partytitle">Party</string>
+    <string name="party">Leader\'s Party</string>
+    <string name="areatitle">Area of Governance</string>
+    <string name="area">Area</string>
+    <string name="educationtitle">Education</string>
+    <string name="education">Institution of Education</string>
+    <string name="awardstitle">Award(s)</string>
+    <string name="awards">Awards Received</string>
+    <string name="officetitle">In Office Since</string>
+    <string name="office">Office duration</string>
+    <string name="manifestotitle">Manifesto</string>
+    <string name="manifesto">Manifesto Issued</string>
+    <string name="title_activity_login">Sign in</string>
+    <!--strings related to options_menu-->
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <!--strings related to popup_menu-->
+    <string name="popupcomments">Comment</string>
+    <!--strs related to comment activity-->
+    <string name="textViewUsername">Username</string>
+    <string name="comment">Comment</string>
+    <string name="timestamp">Time Stamp</string>
+    <string name="entercomment">Input your opinion</string>
+    <string name="btnenter">Enter</string>
+    <string name="firstname">1st</string>
+    <string name="secondname">2nd</string>
+    <string name="surname">3rd</string>
+</resources>
