@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.phosphor.idecided.countyList">
+    android:padding="7.5dp"
+    tools:context="com.example.phosphor.idecided.CountyListActivity">
 
     <ListView
         android:layout_width="match_parent"

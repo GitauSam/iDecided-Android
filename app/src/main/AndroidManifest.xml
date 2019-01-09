@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.phosphor.idecided">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,18 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".userLogin">
+        <activity android:name=".BaseActivity"/>
+        <activity android:name=".UserLoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".userRegistration" />
-        <activity android:name=".countyList" />
-        <activity android:name=".leadersList" />
-        <activity android:name=".leaderProfile" />
-        <activity android:name=".Comments"></activity>
+        <activity android:name=".UserRegistrationActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".CountyListActivity" />
+        <activity android:name=".CommentsActivity" />
+        <activity android:name=".LeadersExpListViewActivity" />
+        <activity android:name=".LeaderDetailsActivity"/>
     </application>
 
 </manifest>

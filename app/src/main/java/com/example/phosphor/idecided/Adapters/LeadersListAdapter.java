@@ -1,4 +1,4 @@
-package com.example.phosphor.idecided;
+package com.example.phosphor.idecided.Adapters;
 
 import android.app.Activity;
 import android.support.annotation.NonNull;
@@ -11,17 +11,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.phosphor.idecided.Model.LeadersListModel;
+import com.example.phosphor.idecided.R;
 
 import java.util.List;
 
-public class leadersListAdapter extends ArrayAdapter<leadersListModel> {
+public class LeadersListAdapter extends ArrayAdapter<LeadersListModel> {
 
     private Activity context;
-    private List<leadersListModel> leadersListModelList;
+    private List<LeadersListModel> leadersListModelList;
 
     @SuppressWarnings("WeakerAccess")
-    protected leadersListAdapter(Activity context, List<leadersListModel> leadersListModelList) {
-        super(context, R.layout.leaders_list_layout, leadersListModelList);
+    protected LeadersListAdapter(Activity context, List<LeadersListModel> leadersListModelList) {
+        super(context, R.layout.layout_leaders_list, leadersListModelList);
         this.context = context;
         this.leadersListModelList = leadersListModelList;
     }
@@ -32,7 +34,7 @@ public class leadersListAdapter extends ArrayAdapter<leadersListModel> {
 
         if (convertView == null) {
             LayoutInflater inflater = context.getLayoutInflater();
-            convertView = inflater.inflate(R.layout.leaders_list_layout, parent, false);
+            convertView = inflater.inflate(R.layout.layout_leaders_list, parent, false);
 
             TextView textViewfirstname = convertView.findViewById(R.id.textViewfirstname);
             TextView textViewsecondname = convertView.findViewById(R.id.textViewSecondname);
@@ -41,7 +43,7 @@ public class leadersListAdapter extends ArrayAdapter<leadersListModel> {
             ImageView imageViewLeaderimage = convertView.findViewById(R.id.imageViewLeaderimage);
 
 
-            leadersListModel leadersListModel_Obj = leadersListModelList.get(position);
+            LeadersListModel leadersListModel_Obj = leadersListModelList.get(position);
             textViewfirstname.setText(leadersListModel_Obj.getFirstname());
             textViewsecondname.setText(leadersListModel_Obj.getSecondname());
             textViewsurname.setText(leadersListModel_Obj.getSurname());

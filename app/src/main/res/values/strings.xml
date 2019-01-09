@@ -41,4 +41,11 @@
     <string name="firstname">1st</string>
     <string name="secondname">2nd</string>
     <string name="surname">3rd</string>
+    <string name="toolbar_comment">Toolbar Comment</string>
+    <string name="header">Header</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="leader_profile_fragment">Profile</string>
+    <string name="leader_manifesto_fragment">Manifesto</string>
+    <string name="leader_comments_fragment">Comments</string>
 </resources>

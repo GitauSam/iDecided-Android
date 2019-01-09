@@ -1,7 +1,6 @@
 package com.example.phosphor.idecided;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,9 +10,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.phosphor.idecided.Model.Constants;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class countyList extends AppCompatActivity {
+public class CountyListActivity extends BaseActivity {
 
     ListView listViewCounties;
 
@@ -32,12 +32,12 @@ public class countyList extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         if (mAuth.getCurrentUser() == null){
-            startActivity(new Intent(this, userLogin.class));
+            startActivity(new Intent(this, UserLoginActivity.class));
             finish();
         }
 
         listViewCounties = findViewById(R.id.listViewCounties);
-        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, Counties);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, Counties);
         listViewCounties.setAdapter(adapter);
 
         listViewCounties.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener() {
@@ -46,55 +46,59 @@ public class countyList extends AppCompatActivity {
 
                 if (position == 4){
                     String item = "elgeyomarakwet";
-                    Intent myintent = new Intent(getApplication(),leadersList.class);
-                    myintent.putExtra("countyName",item);
+                    setUserConstants(item);
+                    Intent myintent = new Intent(getApplication(),LeadersExpListViewActivity.class);
                     startActivity(myintent);
                 }
 
                 if (position == 7){
                     String item = "homabay";
-                    Intent myintent = new Intent(getApplication(),leadersList.class);
-                    myintent.putExtra("countyName",item);
+                    setUserConstants(item);
+                    Intent myintent = new Intent(getApplication(),LeadersExpListViewActivity.class);
                     startActivity(myintent);
                 }
 
                 if (position == 38){
                     String item = "taitataveta";
-                    Intent myintent = new Intent(getApplication(),leadersList.class);
-                    myintent.putExtra("countyName",item);
+                    setUserConstants(item);
+                    Intent myintent = new Intent(getApplication(),LeaderDetailsActivity.class);
                     startActivity(myintent);
                 }
 
                 if (position == 39){
                     String item = "tanariver";
-                    Intent myintent = new Intent(getApplication(),leadersList.class);
-                    myintent.putExtra("countyName",item);
+                    setUserConstants(item);
+                    Intent myintent = new Intent(getApplication(),LeaderDetailsActivity.class);
                     startActivity(myintent);
                 }
 
                 if (position == 42){
                     String item = "uasingishu";
-                    Intent myintent = new Intent(getApplication(),leadersList.class);
-                    myintent.putExtra("countyName",item);
+                    setUserConstants(item);
+                    Intent myintent = new Intent(getApplication(),LeaderDetailsActivity.class);
                     startActivity(myintent);
                 }
 
                 if (position == 45){
                     String item = "westpokot";
-                    Intent myintent = new Intent(getApplication(),leadersList.class);
-                    myintent.putExtra("countyName",item);
+                    setUserConstants(item);
+                    Intent myintent = new Intent(getApplication(),LeaderDetailsActivity.class);
                     startActivity(myintent);
                 }
 
                 if (position != 4 && position != 7 && position != 38 && position != 39 && position != 42 && position !=45) {
                     String item = (String) listViewCounties.getItemAtPosition(position);
+                    setUserConstants(item);
                     Toast.makeText(getApplication(), "You selected : " + item, Toast.LENGTH_SHORT).show();
-                    Intent myintent = new Intent(getApplication(), leadersList.class);
-                    myintent.putExtra("countyName", item);
+                    Intent myintent = new Intent(getApplication(), LeadersExpListViewActivity.class);
                     startActivity(myintent);
                 }
             }
         });
+    }
+
+    public void setUserConstants(String item){
+        Constants.selectedCounty=item;
     }
 
     @Override
@@ -107,9 +111,9 @@ public class countyList extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.menuLogout:
-                mAuth.signOut();
+                signOut();
                 finish();
-                startActivity(new Intent(this, userLogin.class));
+                startActivity(new Intent(this, UserLoginActivity.class));
                 break;
 
             case R.id.menuSettings:

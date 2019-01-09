@@ -14,4 +14,7 @@
     <dimen name="cardViewHeight">42.5dp</dimen>
     <dimen name="cardViewHeightSW">44.5dp</dimen>
     <dimen name="cardViewRadius">25dp</dimen>
+    <!--floating action button-->
+    <dimen name="fab_button_margin_bottom">16dp</dimen>
+    <dimen name="fab_button_margin_right">16dp</dimen>
 </resources>

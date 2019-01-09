@@ -2,21 +2,21 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#E0E0E0"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.phosphor.idecided.leadersList">
-
+    android:padding="3.5dp"
+    tools:context="com.example.phosphor.idecided.LeadersExpListViewActivity">
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
+        android:layout_gravity="center_vertical|center"
         android:layout_centerInParent="true"
-        />
-
-    <ListView
+        android:id="@+id/progress_bar_exp_listview"/>
+    <ExpandableListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/listViewLeaders">
-    </ListView>
-
+        android:layout_height="match_parent"
+        android:id="@+id/leadersListExpList"
+        android:padding="2dp"
+        android:indicatorRight="2dp"/>
 </RelativeLayout>
